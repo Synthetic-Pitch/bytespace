@@ -35,7 +35,7 @@ const LandingPhase3 = () => {
                 {
                     courses.map((course)=>(
                         <div key={course.index} className="cursor-pointer hover:scale-[1.01] transform duration-100" >
-                            <img src={course.src} alt="" draggable={false} className="w-full h-auto" />
+                            <img src={course.src} alt="" draggable={false} className="w-full h-auto select-none" />
                         </div>
                     ))
                 }
@@ -50,7 +50,7 @@ const LandingPhase3 = () => {
                 {
                     categories.map((category)=>(
                         <div key={category.index} className="cursor-default">
-                            <img src={category.src} alt="" draggable={false} className="w-full h-auto" />
+                            <img src={category.src} alt="" draggable={false} className="w-full h-auto select-none" />
                         </div>
                     ))
                 }

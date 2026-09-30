@@ -21,7 +21,7 @@ const HappyStudents = () => {
                 <p className="font-satoshi text-6">Happy Students</p>
                 <div className="font-satoshi flex items-center gap-2 text-2">
                     4.5 <span className="text-gray-500">240</span>
-                    <img src={star} alt="" className="h-4 w-4"/>
+                    <img draggable={false} src={star} alt="" className="h-4 w-4 select-none"/>
                 </div>
                <div className="flex items-cente w-full">
                 {pictures.map((pic, i) => (
@@ -30,7 +30,7 @@ const HappyStudents = () => {
                     className="h-[43px] w-[43px] rounded-full border-2 border-white overflow-hidden"
                     style={{ marginLeft: i === 0 ? 0 : "-14px" }}
                     >
-                    <img src={pic.src} alt="" className="h-full w-full object-cover" />
+                    <img draggable={false} src={pic.src} alt="" className="h-full w-full object-cover select-none" />
                     </div>
                 ))}
 

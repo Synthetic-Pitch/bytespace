@@ -45,7 +45,7 @@ const LandingPhase2 = () => {
             <header className="min-h-36 sm:min-h-50.5 bg-[#F5F5F6] w-full flex flex-wrap items-center justify-center gap-x-8 gap-y-6 px-4 py-8 sm:gap-x-16 lg:gap-x-30">
                 {logos.map((logo)=>(
                     <div key={logo.index} className="flex items-center justify-center">
-                        <img src={logo.src} alt="" className="max-h-12 max-w-24 sm:max-h-14 sm:max-w-32 object-contain" />
+                        <img draggable={false} src={logo.src} alt="" className="max-h-12 max-w-24 sm:max-h-14 sm:max-w-32 object-contain select-none" />
                     </div>
                 ))}
             </header>

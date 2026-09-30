@@ -66,17 +66,17 @@ const LandingPhase4 = () => {
                     <div className="absolute top-[10%] right-[5%] z-22 h-28 w-20 sm:h-36 sm:w-24 lg:top-30 lg:left-130 lg:right-auto lg:h-40 lg:w-40">
                         <Icon1 />
                     </div>
-                    <img src={course1} alt="" className="absolute top-0 left-0 z-10 w-[min(56vw,300px)] sm:w-64 lg:h-90 lg:w-90"/>
+                    <img draggable={false} src={course1} alt="" className="absolute top-0 left-0 z-10 w-[min(56vw,300px)] sm:w-64 lg:h-90 lg:w-90 select-none"/>
                 </main>
             </section>
             <aside className="relative flex flex-col lg:flex-row w-full max-w-300 px-5 sm:px-8 lg:px-0 py-10 lg:py-18 lg:h-200">
                 <main className="w-full lg:w-1/2 h-[320px] sm:h-[420px] lg:h-full relative flex justify-center lg:justify-start overflow-hidden lg:overflow-visible">
-                    <img src={Hero2} alt="" className="z-10 max-h-full w-full object-contain scale-100 lg:max-h-none lg:w-auto lg:scale-[1.2]" />
+                    <img draggable={false} src={Hero2} alt="" className="z-10 max-h-full w-full object-contain scale-100 lg:max-h-none lg:w-auto lg:scale-[1.2] select-none" />
                     <div className="hidden sm:block h-32 w-32 lg:h-50 lg:w-50 absolute top-8 lg:top-30 right-4 lg:right-20 z-11">
                         <Icon1/>
                     </div>
-                    <img src={revenue1} alt="" className="hidden sm:block h-[119px] w-[232px] absolute left-0 lg:-left-12 z-8" />
-                    <img src={revenue2} alt="" className="hidden sm:block h-[133px] w-[134px] absolute top-40 left-0 lg:-left-10 z-8" />
+                    <img draggable={false} src={revenue1} alt="" className="hidden sm:block h-[119px] w-[232px] absolute left-0 lg:-left-12 z-8 select-none" />
+                    <img draggable={false} src={revenue2} alt="" className="hidden sm:block h-[133px] w-[134px] absolute top-40 left-0 lg:-left-10 z-8 select-none" />
                     <div className="hidden lg:block absolute bottom-0 -right-80 h-200 w-200 z-12">
                         <HappyStudents/>
                     </div>
@@ -95,7 +95,7 @@ const LandingPhase4 = () => {
                     <ul>
                         {list.map((item,index)=>(
                             <li key={index} className="flex gap-4 py-2">
-                                <img src={item.src} alt="" className="h-6 w-6 object-contain"/>
+                                <img draggable={false} src={item.src} alt="" className="h-6 w-6 object-contain select-none"/>
                                 <p>{item.label}</p>
                             </li>
                         ))}

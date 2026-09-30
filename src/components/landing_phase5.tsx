@@ -28,13 +28,13 @@ const LandingPhase5 = () => {
             <p className='w-full max-w-300 px-5 sm:px-8 text-center text-white text-sm sm:text-base lg:text-[18px]'>Experience the collaboration of numerous creators and an expanding selection of courses. Register now and become a <br className='hidden lg:block' /> part of a community comprising over 10,000 local and international creators. Utilize our Course Editor, and showcase your <br className='hidden lg:block' /> expertise by publishing your finest course on the ByteSpace Course Library.</p>
             <button className='bg-[#D4FB20] mt-8 lg:mt-12 mb-10 lg:mb-0 py-2 px-9 rounded-full font-satoshi text-[18px]'>Join as Creator</button>
             <div className='hidden lg:block absolute top-0 h-full w-full max-w-300'>
-                <img src={icon1} alt="" className='h-90 w-90 object-contain absolute -top-40 -left-40'/>
-                <img src={icon2} alt="" className='h-30 w-30 absolute top-20 left-30' />
-                <img src={icon3} alt="" className='h-30 w-30 absolute top-20 right-30' />
-                <img src={icon4} alt="" className='h-65 w-65 absolute top-10 -right-40 -rotate-30' />
-                <img src={icon5} alt="" className='h-70 w-70 absolute -bottom-30 left-0' />
-                <img src={icon6} alt="" className='h-30 w-30 absolute bottom-30 -left-20' />
-                <img src={icon1} alt="" className='h-60 w-60 absolute -bottom-30 -right-20 -rotate-40 object-cover' />
+                <img draggable={false} src={icon1} alt="" className='h-90 w-90 object-contain absolute -top-40 -left-40 select-none'/>
+                <img draggable={false} src={icon2} alt="" className='h-30 w-30 absolute top-20 left-30 select-none' />
+                <img draggable={false} src={icon3} alt="" className='h-30 w-30 absolute top-20 right-30 select-none' />
+                <img draggable={false} src={icon4} alt="" className='h-65 w-65 absolute top-10 -right-40 -rotate-30 select-none' />
+                <img draggable={false} src={icon5} alt="" className='h-70 w-70 absolute -bottom-30 left-0 select-none' />
+                <img draggable={false} src={icon6} alt="" className='h-30 w-30 absolute bottom-30 -left-20 select-none' />
+                <img draggable={false} src={icon1} alt="" className='h-60 w-60 absolute -bottom-30 -right-20 -rotate-40 object-cover select-none' />
             </div>
             <GridBackground/>
         </header>
@@ -72,7 +72,7 @@ const LandingPhase5 = () => {
                         card.map((card,index)=>(
                             <li key={index} className='min-h-[300px] lg:h-[432px] w-full max-w-[374px] lg:w-[374px] px-6 bg-[#FFFFFF] rounded-2xl'>
                                 <div className='py-6'>
-                                    <img src={card.src} alt={card.name} />
+                                    <img className="select-none" draggable={false} src={card.src} alt={card.name} />
                                 </div>
                                 <div className='mb-6'>
                                     <h1 className='text-[20px] font-poppins font-semibold'>{card.name}</h1>
@@ -88,7 +88,7 @@ const LandingPhase5 = () => {
         <footer className='h-auto lg:h-[525px] w-full flex items-center justify-center py-12 lg:py-0'>
             <main className='w-full max-w-300 px-5 sm:px-8 lg:px-0'>
                 <div className='flex items-center gap-3'>
-                    <img src={bytespace} alt="" className='object-contain -mt-2' />
+                    <img draggable={false} src={bytespace} alt="" className='object-contain -mt-2 select-none' />
                     <h1 className='text-[24px] font-clashdisplay font-bold'>
                         ByteSpace
                     </h1>
