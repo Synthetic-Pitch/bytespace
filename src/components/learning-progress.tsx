@@ -1,8 +1,8 @@
 
 
-const LearningProgress = () => {
+const LearningProgress = ({ className = "" }: { className?: string }) => {
   return (
-    <div className="bg-white w-[258px] h-[121px] absolute left-[62%] rounded-xl text-black flex flex-col items-start justify-center px-6">
+    <div className={`bg-white w-[258px] h-[121px] absolute left-[62%] rounded-xl text-black flex flex-col items-start justify-center px-6 ${className}`}>
         <p className="font-satoshi text-black">Learning Progress</p>
         <h1 className="font-poppins text-[32px] font-bold">55%</h1>
         <progress value={70} max={100} 
