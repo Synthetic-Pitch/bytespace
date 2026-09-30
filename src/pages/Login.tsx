@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import type { FormEvent } from "react";
 import GridBackground from "../components/gridbackground";
 import logo from "../assets/icons/bytespace_logo.png";
@@ -49,7 +49,7 @@ const Login = () => {
                                 <p>
                                     New User?
                                 </p>
-                                <span className="text-[#003BE2] font-satoshi cursor-pointer">Create an account</span>
+                                <Link to="/register" className="text-[#003BE2] font-satoshi cursor-pointer">Create an account</Link>
                             </div>
                         </main>
                     </div>
